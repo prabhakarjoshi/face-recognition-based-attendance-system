@@ -1,10 +1,10 @@
 from tkinter import *
 import tkinter.messagebox
 import mysql.connector
+from GUI.Dashboard_UI import Dashboard_UI_Fun
 
-# import Dashboard_UI
 
-def Login_Validate_fun(login,name,code,passw):
+def Login_Validate_fun(login,name,code,passw,root1):
     
     mydb=mysql.connector.connect(host="localhost",
     user="root",
@@ -21,7 +21,6 @@ def Login_Validate_fun(login,name,code,passw):
             for row in cursor: 
                 if row[0]==passw:
                     print("loginn successfull")
-                    # Dashboard_UI.Dashboard_UI_Fun()
                     break   
 
             cursor.close()
@@ -37,3 +36,6 @@ def Login_Validate_fun(login,name,code,passw):
             cursor.execute("commit")   
             cursor.close()
             mydb.close()
+        root1.destroy()
+        print("oneeeeeeeeeeee")
+        Dashboard_UI_Fun()
