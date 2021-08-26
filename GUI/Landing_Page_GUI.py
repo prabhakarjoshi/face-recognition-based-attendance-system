@@ -1,7 +1,10 @@
 from GUI.Second_Page_login_Or_Signup import Second_Page_login_Or_Signup_fun
+from Data_Processing.Take_Attendence import Take_Attendence_Fun
 from tkinter import *
 from tkinter import font 
 from PIL import Image,ImageTk
+
+# from Take_Attendence import Take_Attenedence_Fun
 
 
 def MyImage(str):
@@ -30,7 +33,7 @@ def Landing_Page_GUI_Fun():
     photo=MyImage("admin")
     but_admin_login=Button(root, text='ADMIN',image=photo, width=200,height=300,compound=TOP,font=myFont,bg="#C1CFC0",command=Second_Page_login_Or_Signup_fun_helper,border=0).place(x=95,y=90)
     photo1=MyImage("user")
-    but_user=Button(root, text='USER',image=photo1,height=300,compound=TOP,font=myFont, width=200,bg="#6B7AA1").place(x=300,y=90)
+    but_user=Button(root, text='USER',image=photo1,height=300,compound=TOP,font=myFont, width=200,bg="#6B7AA1",command=Take_Attendence_Fun).place(x=300,y=90)
 
 
 

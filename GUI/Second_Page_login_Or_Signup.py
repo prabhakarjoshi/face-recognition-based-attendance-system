@@ -6,7 +6,7 @@ def Second_Page_login_Or_Signup_fun():
     login=False
 
     def LoginValidateHelper(arg=None): 
-        Login_Validate_fun(login,entry_1.get(),entry_2.get(),entry_3.get())  
+        Login_Validate_fun(login,entry_1.get(),entry_2.get(),entry_3.get(),root1)  
     
     def Switching(arg=None):
         nonlocal login

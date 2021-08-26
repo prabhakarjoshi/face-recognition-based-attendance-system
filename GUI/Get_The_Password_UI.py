@@ -30,4 +30,3 @@ def Get_The_Password_fun():
     but_Get=Button(root3, text='Get Password',width=12,bg='brown',fg='white',command=Get_Password_db_fun_helper)
     but_Get.place(x=150,y=180)
     root3.mainloop()
-

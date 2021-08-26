@@ -18,4 +18,3 @@ def Get_Password_db_fun(name,code):
         # print(str)
         cursor.close()
         mydb.close()
-        return str    
