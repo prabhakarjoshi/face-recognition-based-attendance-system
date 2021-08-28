@@ -16,27 +16,27 @@ def Login_Validate_fun(login,name,code,passw,root1):
             tkinter.messagebox.showinfo("Error while connecting to the database!")
         else:
             if login:
-                print("a")
+                # for logging in
                 query1 = "SELECT `password` FROM `login` WHERE username='"+name+"'"
                 cursor.execute(query1)
-                print("b")
-                for row in cursor: 
+                
+                for row in cursor:
                     if row[0]==passw:
-                        print("loginn successfull")
+                        root1.destroy()
+                        Dashboard_UI_Fun()
                         break   
-                print("oneeeeeeeeeeeyyye")    
+
                 cursor.close()
                 mydb.close()
               
             else:
-            # print("signup ho gya") 
+            # for signing in
                 query1 = "INSERT INTO `login` (`username`, `password`, `Code number`) VALUES ('"+name+"', '"+passw+"', '"+code+"')"
                 cursor.execute(query1)
                 cursor.execute("commit")   
                 cursor.close()
                 mydb.close()
-        root1.destroy()
-        print("oneeeeeeeeeeee")
-        Dashboard_UI_Fun()
+                root1.destroy()
+                Dashboard_UI_Fun()
     except error as E:
         print(E)

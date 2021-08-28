@@ -2,7 +2,7 @@
 from tkinter import *
 from tkinter import font 
 from DB.Add_New_Student import Add_New_Student_Fun
-
+from variables import list1
 def  Add_Student_UI_Fun():
     root5=Tk()
     var1=StringVar()
@@ -51,7 +51,7 @@ def  Add_Student_UI_Fun():
     label_5.place(x=80,y=300)
 
     
-    list1=["B-Tech","MBA",'BCA','BSc',"MSc",'M-Tech']
+ 
     droplist=OptionMenu(root5,var1,*list1)
     var1.set("Select Course")
     # droplist.config(width=15)

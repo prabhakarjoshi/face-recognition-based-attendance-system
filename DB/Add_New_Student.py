@@ -14,12 +14,10 @@ def Add_New_Student_Fun(root5,name,sec,id,roll,course):
         if not mydb.is_connected:
             tkinter.messagebox.showinfo("Error while connecting to the database!")
         else:
-            query1 = "INSERT INTO `students` (`NAME`, `COURSE`, `SECTION`, `ROLL NO`, `STUDENT ID`) VALUES ('"+name+"', '"+course+"', '"+sec+"', '"+roll+"', '"+id+"')"
+            query1 = "INSERT INTO `students` (`NAME`, `COURSE`, `SECTION`, `ROLL NO`, `STUDENT_ID`) VALUES ('"+name+"', '"+course+"', '"+sec+"', '"+roll+"', '"+id+"')"
             cursor.execute(query1)
             cursor.execute("commit")
             Take_Sample_Fun(id)
-            
-            
             cursor.close()
             mydb.close()
     except error as e:
