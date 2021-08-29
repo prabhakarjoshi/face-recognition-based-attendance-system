@@ -18,21 +18,16 @@ keypoints:-
 
 Sceenshots:-
 Image1(Landing page)
-
-https://user-images.githubusercontent.com/70520718/131241987-e7a37886-0eb4-4808-8864-e0b7d7f553c4.png
+![tb-architecture-1.png](https://user-images.githubusercontent.com/70520718/131241987-e7a37886-0eb4-4808-8864-e0b7d7f553c4.png)
 
 Image2(Login Page)
-
-https://user-images.githubusercontent.com/70520718/131241993-fef34b28-ed40-48ab-a437-2831f07f7900.png
+![tb-architecture-1.png](https://user-images.githubusercontent.com/70520718/131241993-fef34b28-ed40-48ab-a437-2831f07f7900.png)
 
 Image3(Dashboard)
-
-https://user-images.githubusercontent.com/70520718/131242001-a5220405-1619-4cef-aafc-a4404c3545f3.png
+![tb-architecture-1.png](https://user-images.githubusercontent.com/70520718/131242001-a5220405-1619-4cef-aafc-a4404c3545f3.png)
 
 Image4(Data Manage)
-
-https://user-images.githubusercontent.com/70520718/131242004-ae2f555e-0ed7-4c3f-a9e6-580735cfc4f1.png
+![tb-architecture-1.png](https://user-images.githubusercontent.com/70520718/131242004-ae2f555e-0ed7-4c3f-a9e6-580735cfc4f1.png)
 
 Image5(Recogniser)
-
-https://user-images.githubusercontent.com/70520718/131242008-7df9e27c-7084-480a-8be0-4fdd12bc0242.png
+![tb-architecture-1.png](https://user-images.githubusercontent.com/70520718/131242008-7df9e27c-7084-480a-8be0-4fdd12bc0242.png)
