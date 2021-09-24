@@ -1,4 +1,4 @@
-# face-recognition-system
+# face-recognition-based-attendance-system
 This project scans face from camera and marks the attendance on the database.Later-on, admin can extract this data from the database by filtering on the basis of student's course and section.
 This project uses:-
 1) Python
